@@ -1,6 +1,7 @@
 # Drum machine
  Made as a FCC project
-Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
+ [![CC BY 4.0][cc-by-shield]][cc-by]
 
 ## License
 This work is licensed under a
