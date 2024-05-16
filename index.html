@@ -8,46 +8,69 @@
 		<script src="libs/popperjs/umd/popper.min.js"></script>
 		<link href="libs/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
 		<script src="libs/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+		<script src="libs/js/index.js"></script>
 	</head>
-	<body>
-		<div id='drum-machine' class="container text-center position-absolute top-50 start-50 translate-middle">
-			<div class="row align-items-center">
-			  <div class="col">
-				<button class="drum-pad" id="Q">Q</button>
-			  </div>
-			  <div class="col">
-				<button class="drum-pad" id="W">W</button>
-			  </div>
-			  <div class="col">
-				<button class="drum-pad" id="E">E</button>
-			  </div>
+	<body class="container-fluid">
+		<div id='drum-machine' class="text-center position-absolute top-50 start-50 translate-middle card shadow">
+			<div class="card-body">
+				<div class="row align-items-center">
+					<div class="col">
+						<button class="drum-pad btn btn-primary" id="btnQ" onclick="play('Q')">Q
+							<audio src="assets/Heater-1.mp3" class="clip" id="Q"></audio>
+						</button>
+					</div>
+					<div class="col">
+						<button class="drum-pad btn btn-primary" id="btnW" onclick="play('W')">W
+							<audio src="assets/Heater-2.mp3" class="clip" id="W"></audio>
+						</button>
+					</div>
+					<div class="col">
+						<button class="drum-pad btn btn-primary" id="btnE" onclick="play('E')">E
+							<audio src="assets/Heater-3.mp3" class="clip" id="E"></audio>
+						</button>
+					</div>
+				</div>
+				<br>
+				<div class="row align-items-center">
+					<div class="col">
+						<button class="drum-pad btn btn-warning" id="btnA" onclick="play('A')">A
+							<audio src="assets/Heater-4_1.mp3" class="clip" id="A"></audio>
+						</button>
+					</div>
+					<div class="col">
+						<button class="drum-pad btn btn-warning" id="btnS" onclick="play('S')">S
+							<audio src="assets/Heater-6.mp3" class="clip" id="S"></audio>
+						</button>
+					</div>
+					<div class="col">
+						<button class="drum-pad btn btn-warning" id="btnD" onclick="play('D')">D
+							<audio src="assets/Dsc_Oh.mp3" class="clip" id="D"></audio>
+						</button>
+					</div>
+				</div>
+				<br>
+				<div class="row align-items-center">
+					<div class="col">
+						<button class="drum-pad btn btn-info" id="btnZ" onclick="play('Z')">Z
+							<audio src="assets/Kick_n_Hat.mp3" class="clip" id="Z"></audio>
+						</button>
+					</div>
+					<div class="col">
+						<button class="drum-pad btn btn-info" id="btnX" onclick="play('X')">X
+							<audio src="assets/RP4_KICK_1.mp3" class="clip" id="X"></audio>
+						</button>
+					</div>
+					<div class="col">
+						<button class="drum-pad btn btn-info" id="btnC" onclick="play('C')">C
+							<audio src="assets/Cev_H2.mp3" class="clip" id="C"></audio>
+						</button>
+					</div>
+				</div>
+				<br><br>
+				<h5><span id="display" class="badge text-bg-secondary">Press key</span></h5>
 			</div>
-			<br>
-			<div class="row align-items-center">
-				<div class="col">
-					<button class="drum-pad" id="A">A</button>
-				</div>
-				<div class="col">
-					<button class="drum-pad" id="S">S</button>
-				</div>
-				<div class="col">
-					<button class="drum-pad" id="D">D</button>
-				</div>
-			  </div>
-			  <br>
-			  <div class="row align-items-center">
-				<div class="col">
-					<button class="drum-pad" id="Z">Z</button>
-				</div>
-				<div class="col">
-					<button class="drum-pad" id="X">X</button>
-				</div>
-				<div class="col">
-					<button class="drum-pad" id="C">C</button>
-				</div>
-			  </div>
-		  </div>
-		  <!-- TEMP -->
+		</div>
+		<!-- TEMP -->
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
 </html>
