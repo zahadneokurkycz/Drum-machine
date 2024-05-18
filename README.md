@@ -1,6 +1,8 @@
 # Drum machine
  Made as a FCC project
 
+ [Visit live](https://zahadneokurkycz.github.io/Drum-machine/)
+
  [![CC BY 4.0][cc-by-shield]][cc-by]
 
 ## License
